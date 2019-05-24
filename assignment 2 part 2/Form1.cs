@@ -41,7 +41,24 @@ namespace assignment_2_part_2
 }
         private void label1_Click(object sender, EventArgs e)
         {
+            double resistor1 = double.Parse(textBox1.Text);
+            // read values from textbox 1 and inputs to resistor 1 and inputs toresistor 1
+            double resistor2 = double.Parse(textBox2.Text);
+            double resistor3 = double.Parse(textBox3);
+            // reads values from textBox2 and inputs to resistor 2
+            double resistor4 = double.Parse(textBox4);
+
+            double totalresistance = resistor1 + resistor2 + resistor3 + resistor4;
+            // calculate the total resistance of the series circuit 
+            MessageBox.Show("total resistance =" + totalresistance.ToString("0.00") + "ohms");
+            // display the total resistance of the series circuit with unit ohms 
 
         }
-    }
-}
+           
+            
+   
+ 
+
+
+      
+            
